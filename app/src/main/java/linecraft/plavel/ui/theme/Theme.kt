@@ -9,7 +9,8 @@ import androidx.compose.runtime.Composable
 private val DarkColorPalette = darkColors(
     primary = Purple200,
     primaryVariant = Purple700,
-    secondary = Teal200
+    secondary = Teal200,
+    background = MainBackgroundColor
 )
 
 private val LightColorPalette = lightColors(
@@ -29,14 +30,10 @@ private val LightColorPalette = lightColors(
 
 @Composable
 fun PlavelTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val colors = //if (darkTheme) {
-        DarkColorPalette
-//    } else {
-//        LightColorPalette
-//    }
+    val colors = DarkColorPalette
 
     MaterialTheme(
-        colors = colors,
+        colors = DarkColorPalette,
         typography = Typography,
         shapes = Shapes,
         content = content
