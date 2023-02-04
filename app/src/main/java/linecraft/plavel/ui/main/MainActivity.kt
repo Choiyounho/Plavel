@@ -1,4 +1,4 @@
-package linecraft.plavel
+package linecraft.plavel.ui.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
